@@ -1,0 +1,203 @@
+.checkout-background {
+    height: 100vh;
+    width:100vw;
+    background-color: #cccccc;
+    background-image: url("../../../public/Tokenmint02.png");
+    padding-top: 1vh;
+    padding-right: 1vw;
+    padding-bottom: 1vh;
+    padding-left: 1vw;
+}
+
+.nav-envelope{
+    height: 15%;
+}
+
+.body-envolope{
+    height: 80%;
+}
+
+
+.glass {
+    position: relative;
+    background: inherit;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 
+                0 6px 20px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+  }
+  
+  .glass:before {
+    content: '';
+    position: absolute;
+    background: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: -20px;
+    box-shadow: inset 0 0 500px rgba(255, 255, 255, .4); 
+    filter: blur(10px);
+    z-index: -1;
+  }
+
+  .neon-background {
+    background-color: rgba(15, 183, 255, 0.3); 
+    border-radius: 10px; /* Optional: Round the corners */
+    border:none;
+    box-shadow: 0 0 20px rgba(15, 183, 255, 0.8), 0 0 40px rgba(15, 183, 255, 0.6), 0 0 60px rgba(15, 183, 255, 0.4); /* Neon glow effect */
+    color: #fff; /* Text color */
+    text-shadow: 0 0 10px rgba(15, 183, 255, 1); /* Neon text glow effect */
+}
+
+.neon-red {
+    --neon: #FF5161;
+    --neon-glow: #D30302;
+  }
+  
+  .neon-pink {
+    --neon: #FF53cd;
+    --neon-glow: #e10361;
+  }
+  
+  .neon-purple {
+    --neon: #9461fd;
+    --neon-glow: #4003e6;
+  }
+  
+  .neon-blue {
+    --neon: #2dd9fe;
+    --neon-glow: #00a3d5;
+  }
+  
+  .neon-green {
+    --neon: #00fe9b;
+    --neon-glow: #02c435;
+  }
+  
+  .neon-yellow {
+    --neon: #ffd016;
+    --neon-glow: #b48505;
+  }
+  
+  .neon-white {
+    --neon: #fefefe;
+    --neon-glow: #ffffff;
+  }
+  
+  .neon-bluish{
+    --neon: #72b7f7;
+    --neon-glow: #72b7f7 ;
+  }
+
+  .neon-bonewhite{
+    --neon: #EAEAEA;
+    --neon-glow:#EAEAEA;
+  }
+
+  .neon-saffronbrown{
+    --neon: #DE541E;
+    --neon-glow : #DE541E;
+  }
+
+  @supports (background: color(display-p3 1 1 1)) {
+    @media (dynamic-range: high) {
+      .neon-red {
+        --neon-glow: color(display-p3 1 0 0);
+      }
+  
+      .neon-pink {
+        --neon-glow: color(display-p3 1 0 1);
+      }
+  
+      .neon-purple {
+        --neon-glow: color(display-p3 0 0 1);
+      }
+  
+      .neon-blue {
+        --neon-glow: color(display-p3 0 1 1);
+      }
+  
+      .neon-green {
+        --neon-glow: color(display-p3 0 1 0);
+      }
+  
+      .neon-yellow {
+        --neon-glow: color(display-p3 1 1 0);
+      }
+  
+      .neon-white {
+        --neon-glow: color(display-p3 1 1 1);
+      }
+       
+
+    }
+  }
+  
+
+  .ring {
+    border: 5% solid ;
+    box-shadow: 
+      0 0 50px var(--neon-glow), 
+      inset 0 0 50px var(--neon-glow);
+    border-radius: 1%;
+    box-sizing: border-box;
+  }
+  
+  .ring::after,
+  .ring::before {
+    content: ' ';
+    background: var(--neon);
+    box-shadow: 0 0 25px 2.5px var(--neon-glow);
+  }
+  
+  .ring::after {
+    bottom: -75px;
+  }
+
+  .neonText {
+    color: #ffffff;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px #0ff,
+      0 0 80px #0ff,
+      0 0 90px #0ff,
+      0 0 100px #0ff,
+      0 0 150px #0ff;
+  }
+  
+  .neonTextMy{
+    color: var(--neon);
+    text-shadow: 
+      0 0 5px var(--neon-glow), 
+      0 0 10px var(--neon-glow),
+      0 0 20px var(--neon-glow),
+      0 0 40px var(--neon-glow),
+      0 0 80px var(--neon-glow),
+      0 0 90px var(--neon-glow),
+      0 0 100px var(--neon-glow),
+      0 0 150px var(--neon-glow);
+  }
+
+  .neonBoxMy{
+    box-shadow: 0 0 25px 2.5px var(--neon-glow);
+  }
+
+  .neon-backgroundmy{
+    background: var(--neon);
+    box-shadow: 0 0 25px 2.5px var(--neon-glow);
+  }
+
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 999; /* Ensure it's above other elements */
+  }

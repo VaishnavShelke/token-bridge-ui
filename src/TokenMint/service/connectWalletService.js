@@ -30,6 +30,7 @@ export const connectWalletSync = async (contractInfo) => {
           network: network.name,
         };
       } else {
+        console.log(`Not Connected To network.chainId !== contractInfo.chainId`);
         return {
           statusCode: NOT_CONNECTED_TO_GOERLI,
           statusDescription: `Please Switch to ${contractInfo.chain} network`,

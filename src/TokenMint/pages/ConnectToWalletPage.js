@@ -17,7 +17,7 @@ export default function ConnectToWalletPage(props) {
               <img
                 className="mx-auto "
                 style={{ maxWidth: "80%", maxHeight: "20vh" }}
-                src="https://token-mint-trade.s3.ap-south-1.amazonaws.com/game-png/1001.png"
+                src="https://raw.githubusercontent.com/VaishnavShelke/WibmoPersonalContent/refs/heads/main/Images/1001.png"
                 alt=""
               />
             </div>

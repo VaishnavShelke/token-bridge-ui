@@ -5,9 +5,15 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        REACT_APP_LOADUI_API_URL: http://localhost:1001/tokenmint/server/load-ui/
+    container_name: token-bridge-ui
     ports:
       - "3000:80"
+    networks:
+      - tokenmint-ecosystem
     restart: unless-stopped
-    # Add any environment variables if needed
-    # environment:
-    #   - NODE_ENV=production 
+
+networks:
+  tokenmint-ecosystem:
+    external: true

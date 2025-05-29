@@ -13,8 +13,14 @@ RUN npm ci
 # Copy source code
 COPY . .
 
+# Debug: List contents of src directory
+RUN ls -la src/
+
 # Build the application
 RUN npm run build
+
+# Debug: List contents of build directory
+RUN ls -la build/
 
 # Production stage
 FROM nginx:alpine

@@ -3,10 +3,11 @@ import { connect } from "react-redux";
 import VerificationResultPage from "../pages/VerificationResultPage";
 
 import { doNothingAction } from "../actions/index";
-function VerificationResultComponent() {
+function VerificationResultComponent({ verifyotp, gameLandingPage }) {
   return (
     <div>
-      <VerificationResultPage />
+      <VerificationResultPage verifyotp={verifyotp}
+                              gameLandingPage={gameLandingPage}/>
     </div>
   );
 }

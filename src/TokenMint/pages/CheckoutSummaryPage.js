@@ -10,7 +10,7 @@ export default function CheckoutSummaryPage({ playerInfo, tokenmintinfo }) {
               <img
                 className="img-fluid"
                 style={{ maxHeight: "3vh" }}
-                src="https://token-mint-trade.s3.ap-south-1.amazonaws.com/other-images/TokenMintLogo.png"
+                src="https://raw.githubusercontent.com/VaishnavShelke/WibmoPersonalContent/refs/heads/main/Images/tokenmint-green-logo.png"
               ></img>
             </div>
           </li>

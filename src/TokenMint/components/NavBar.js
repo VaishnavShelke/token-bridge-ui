@@ -8,7 +8,7 @@ function NavBar() {
         <div className="col-lg-3 col-sm-6 border">
           <div className="img-container">
             <img
-              src="https://token-mint-trade.s3.ap-south-1.amazonaws.com/other-images/TokenMintLogo.png"
+              src="https://raw.githubusercontent.com/VaishnavShelke/WibmoPersonalContent/refs/heads/main/Images/tokenmint-green-logo.png"
               className="img-fluid shadow rounded"
               alt="Your Image Description"
             ></img>

@@ -16,10 +16,11 @@ export const getTokenMintTransactionInfo = async () => {
   return LoadUITransactionDetailsMock;
 };
 
-const LoadUIUrl = process.env.REACT_APP_LOADUI_API_URL;
+const LoadUIUrl = "http://localhost:1001/tokenmint/server/load-ui/";
 export const getInitializationState = async (txnId) => {
+  console.log(`ENV REACT_APP_LOADUI_API_URL: ${LoadUIUrl}`);
   const requestUrl = `${LoadUIUrl}${txnId}`;
-  console.log(`Sending Load UI Request :: ${requestUrl}`);
+  console.log(`Shelke Vaishnav Sending Load UI Request :: ${requestUrl}`);
   const jsonRequest = {
     tokenMintTransactionId: txnId,
   };

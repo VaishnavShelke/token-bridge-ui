@@ -6,9 +6,9 @@ import { doNothingAction } from "../actions/index";
 function ContractInfoComponent({ contractInfo, doNothingAction }) {
   const handleLinkClick = () => {
     console.log(
-      `Handle Link Click Pressed :: to ${contractInfo.contractEtherScanUrl}`
+      `Handle Link Click Pressed :: to ${contractInfo.etherscanContractUrl.toString()}`
     );
-    window.open(contractInfo.contractEtherScanUrl, "_blank");
+    window.open(contractInfo.etherscanContractUrl.toString(), "_blank");
   };
   return (
     <div>

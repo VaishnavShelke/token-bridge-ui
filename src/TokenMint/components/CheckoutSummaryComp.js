@@ -10,7 +10,7 @@ export default function CheckoutSummaryComp() {
               <img
                 className="img-fluid"
                 style={{ maxHeight: "3vh" }}
-                src="https://token-mint-trade.s3.ap-south-1.amazonaws.com/other-images/TokenMintLogo.png"
+                src="https://raw.githubusercontent.com/VaishnavShelke/WibmoPersonalContent/refs/heads/main/Images/tokenmint-green-logo.png"
               ></img>
             </div>
           </li>
@@ -19,7 +19,7 @@ export default function CheckoutSummaryComp() {
               <img
                 className="img-fluid"
                 style={{ maxHeight: "12vh" }}
-                src="https://token-mint-trade.s3.ap-south-1.amazonaws.com/game-png/1001.png"
+                src="https://raw.githubusercontent.com/VaishnavShelke/WibmoPersonalContent/refs/heads/main/Images/1001.png"
               ></img>
             </div>
             <div className="d-flex justify-content-center align-items-center">

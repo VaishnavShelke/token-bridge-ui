@@ -7,11 +7,13 @@ export default function CheckoutSummaryComp() {
         <div className="p-1 glass rounded">
           <li className="my-1 mx-1 d-flex justify-content-between">
             <div>
-              <img
-                className="img-fluid"
-                style={{ maxHeight: "3vh" }}
-                src="https://raw.githubusercontent.com/VaishnavShelke/WibmoPersonalContent/refs/heads/main/Images/tokenmint-green-logo.png"
-              ></img>
+              <div className="d-flex justify-content-center align-items-center">
+                <img
+                  className="img-fluid"
+                  style={{ maxHeight: "10vh" }}
+                  src="https://raw.githubusercontent.com/VaishnavShelke/WibmoPersonalContent/refs/heads/main/Images/tokenmint-green-logo.png"
+                ></img>
+              </div>
             </div>
           </li>
           <li className="my-1 mx-1 border-top d-flex justify-content-around lh-condensed">
